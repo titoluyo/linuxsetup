@@ -1,4 +1,6 @@
-#git
+#!/bin/bash
+echo ==== update & upgrade ===
+sudo apt update && sudo apt -y upgrade
 echo ==== INSTALLING git ====
 sudo apt install git -y
 echo ==== CONFIGURING git ====
@@ -14,3 +16,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 
 cat ~/.ssh/id_rsa.pub
+
+: <<'END'
+curl -s "https://raw.githubusercontent.com/titoluyo/linuxsetup/main/00_git.sh" | bash - 
+END

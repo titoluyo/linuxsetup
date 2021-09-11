@@ -1,8 +1,8 @@
 #!/bin/bash
-echo ==== update & upgrade ===
-sudo apt update && sudo apt -y upgrade
-echo ==== INSTALLING git ====
-sudo apt install git -y
+# echo ==== update & upgrade ===
+# sudo apt update && sudo apt -y upgrade
+# echo ==== INSTALLING git ====
+# sudo apt install git -y
 echo ==== CONFIGURING git ====
 git config --global user.email "tluyo@hotmail.com"
 git config --global user.name "Tito Luyo Murata"
